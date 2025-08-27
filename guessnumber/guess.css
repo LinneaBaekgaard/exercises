@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    color: rgb(164, 124, 70);
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+}
+button {
+    cursor: pointer;
+    background-color: rgb(232, 195, 147);
+}
+.button_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+@keyframes wiggle {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(5deg); }
+    50%  { transform: rotate(-5deg); }
+    75%  { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); } 
+}
+
+h3.wiggle {
+  display: inline-block;
+  animation: wiggle 0.5s ;
+  animation-iteration-count: 3;
+}
+
+.hide {
+    display: none;
+}
+button2 {
+    cursor: pointer;
+    border: solid black 1px;
+     background-color: rgb(232, 195, 147);
+    border-radius: 2px;
+    margin: 20px;
+    padding: 5px 10px 5px 10px;
+   
+}
