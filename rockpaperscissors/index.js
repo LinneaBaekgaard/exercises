@@ -107,6 +107,6 @@ function showResult() {
     document.querySelector("#lose").classList.remove("hidden");
   }
 }
-function resetText() {}
+// function resetText() {}
 
 addEventListenersToButtons();
