@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Guess the number!</h1>
+    <p>Type in the number in the form below to find out if you guessed the right number!</p>
+    <button id="btn_guess">Start the game !!</button>
+    <div>
+      <button id="btn_higher">Guess higher</button>
+      <button id="btn_lower">Guess lower</button>
+      <button id="btn_correct">You guessed it</button>
+    </div>
+    <h2></h2>
+    <script src="index.js"></script>
+  </body>
+</html>
+<style>
+  body {
+    text-align: center;
+  }
+  h1 {
+    color: rgb(250, 161, 155);
+  }
+  button {
+    background-color: rgb(250, 161, 155);
+    color: white;
+    margin: 4px;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    85% {
+      transform: rotate(5deg);
+    }
+    95% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  h2.wiggle {
+    display: inline-block;
+    animation: wiggle 2.5s;
+  }
+
+  h2.wiggle:hover {
+    animation: none;
+  }
+</style>
