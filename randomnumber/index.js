@@ -7,3 +7,10 @@ console.log("randomNumber", randomNumber);
 
 // Få det tilfældige tal til at stå i html filen
 document.body.innerHTML += "<p>Tilfældigt tal: " + Math.floor(Math.random() * 100) + "</p>";
+
+// Kan også laves med return values:
+function getRandomNum(max) {
+  return Math.floor(Math.random() * max);
+}
+
+console.log(getRandomNum(100));
