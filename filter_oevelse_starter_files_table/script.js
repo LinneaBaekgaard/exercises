@@ -36,8 +36,6 @@ function isElektrisk(vehicle) {
 const onlyElectricVehicles = vehicles.filter(isElektrisk);
 console.log("onlyElectricVehicles", onlyElectricVehicles);
 
-// showTheseVehicles(onlyElectricVehicles);
-
 // Viser alle fartøjer med mere end 2 sæder
 function isTwoSeats(vehicle) {
   if (vehicle.passengers > 2) {
@@ -47,8 +45,6 @@ function isTwoSeats(vehicle) {
 
 const onlyTwoSeatsVehicles = vehicles.filter(isTwoSeats);
 console.log("onlyTwoSeatsVehicles", onlyTwoSeatsVehicles);
-
-// showTheseVehicles(onlyTwoSeatsVehicles);
 
 // Alle el-drevne fartøjer ejet af Jonas
 
@@ -61,8 +57,6 @@ function isOwnedByJonas(vehicles) {
 const ownedByJonas = vehicles.filter(isOwnedByJonas);
 console.log("OwnedByJonas", ownedByJonas);
 
-// showTheseVehicles(ownedByJonas);
-
 // Alle rugbrøds drevne fartøjer med plads til mere end en.
 
 function rugbrodMedFlere(vehicles) {
@@ -74,19 +68,15 @@ function rugbrodMedFlere(vehicles) {
 const rugbrødMedSæder = vehicles.filter(rugbrodMedFlere);
 console.log("rugbrødMedSæder", rugbrødMedSæder);
 
-// showTheseVehicles(rugbrødMedSæder);
-
 function showTheseVehicles(arr) {
   tbodyPointer.innerHTML = "";
   let sanitizedStops;
   arr.forEach((each) => {
-    // console.log("each.stops", each.stops);
     if (each.stops === undefined) {
       sanitizedStops = " ";
     } else {
       sanitizedStops = each.stops;
     }
-    // console.log("each.ownedBy", each.ownedBy);
     let ifOwnedBy;
     if (each.ownedBy === undefined) {
       ifOwnedBy = " ";
